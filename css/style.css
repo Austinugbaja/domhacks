@@ -284,6 +284,32 @@ body {
   margin-top: 16px;
 }
 
+/* Base styles for facts */
+.facts .col-2 {
+  text-align: center;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .abt  {
+  height: 100%;
+} */
+
+/* Media Query for Small Devices */
+@media (max-width: 576px) {
+  .facts .col-2 {
+      flex: 0 0 100%;  /* Change to full width on small screens */
+      max-width: 100%; /* Ensures the column takes up the whole line */
+  }
+}
+
+.fs-5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .page-header {
   padding-top: 12rem;
   padding-bottom: 6rem;
